@@ -66,10 +66,10 @@ const SideBar = ()=> {
           )}
 
           <Discover />
-          <SuggestedAccounts
+          {/* <SuggestedAccounts
             // fetchAllUsers={fetchAllUsers}
             // allUsers={allUsers}
-          />
+          /> */}
           <Footer />
 
         </div>
