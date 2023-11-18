@@ -1,38 +1,44 @@
-import React from 'react'
-import NavBar from './components/NavBar'
+import React from 'react';
+import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Home from './pages/Home';
-
+import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: (
+
       <>
         <NavBar/>
         <div className='flex justify-start'>
         <SideBar/>
         <Home/>
         </div>
-        
-        
       </>
     )
   },
+      <GoogleOAuthProvider clientId={`${import.meta.env.VITE_APP_GOOGLE_API_TOKEN}`}>
+        <div>
+          <NavBar />
+          <SideBar />
+        </div>
+      </GoogleOAuthProvider>
+    ),
+  },
+  {
+    path: '/Home',
+    element: <Home />,
+  },
 ]);
 
-
 function App() {
-  
-  return (
-
-    <RouterProvider router={router} />
-
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
