@@ -14,7 +14,7 @@ const NavBar = () => {
         </div>
       </Link>
       <div>SEARCH</div>  
-      <div>
+      {/* <div>
         {user ? (
           <div>Logged In</div>
         ) : (
@@ -27,9 +27,10 @@ const NavBar = () => {
         )
 
         }
-      </div>    
+      </div>     */}
     </div>
   )
 }
 
 export default NavBar
+

@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home';
+import './index.css'
 
 
 const router = createBrowserRouter([
@@ -14,13 +15,13 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-      <GoogleOAuthProvider clientId={`${import.meta.env.VITE_APP_GOOGLE_API_TOKEN}`}>
+      {/* <GoogleOAuthProvider clientId={`${import.meta.env.VITE_APP_GOOGLE_API_TOKEN}`}> */}
         <NavBar/>
         <div className='flex justify-start'>
         <SideBar/>
         <Home/>
         </div>
-        </GoogleOAuthProvider>
+        {/* </GoogleOAuthProvider> */}
         
       </>
     )
