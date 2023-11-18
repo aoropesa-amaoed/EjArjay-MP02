@@ -14,14 +14,13 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavBar/>
+        <div className='flex justify-start'>
         <SideBar/>
+        <Home/>
+        </div>
+        
+        
       </>
-    )
-  },
-  {
-    path: "/Home",
-    element: (
-     <Home/>
     )
   },
 ]);
