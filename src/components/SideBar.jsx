@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {AiFillHome, AiOutlineMenu} from 'react-icons/ai';
 import {ImCancelCircle} from 'react-icons/im';
 import { useLocation, Link} from 'react-router-dom';
-import GoogleLogin from 'react-google-login';
+import {GoogleLogin} from '@react-oauth/google';
 import Discover from './Discover';
 import SuggestedAccounts from './SuggestedAccounts';
 import Footer from './Footer';
