@@ -46,7 +46,7 @@ const SideBar = ()=> {
                 Login to like and comment on videos
               </p>
               <div className='pr-4'>
-              <GoogleLogin
+              {/* <GoogleLogin
               clientId=""
               render={renderProps => (
                 <button 
@@ -60,7 +60,7 @@ const SideBar = ()=> {
               onSuccess={() => {}}
               onFailure={() => {}}
               cookiePolicy='single_host_origin'
-              />
+              /> */}
               </div>
             </div>
           )}

@@ -13,6 +13,16 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: (
+
+      <>
+        <NavBar/>
+        <div className='flex justify-start'>
+        <SideBar/>
+        <Home/>
+        </div>
+      </>
+    )
+  },
       <GoogleOAuthProvider clientId={`${import.meta.env.VITE_APP_GOOGLE_API_TOKEN}`}>
         <div>
           <NavBar />
