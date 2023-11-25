@@ -27,7 +27,7 @@ const SideBar = ()=> {
         {showSideBar ? <ImCancelCircle /> : <AiOutlineMenu />}
       </div>
       {showSideBar && (
-        <div className='xl:w-1/5 w-20 flex flex-col justify-start mb-10 border-r-2 border-gray-100 xl:border-0 p-3 '>
+        <div className='xl:w-80 mr-5 w-20 flex flex-col justify-start mb-10 border-r-2 border-gray-100 xl:border-0 p-3'>
           <div className='xl:border-b-2 border-gray-200 xl:pb-4'>
             <Link to='/'>
               <div className={currentPath === '/' ? activeLink : normalLink}>
@@ -46,7 +46,7 @@ const SideBar = ()=> {
                 Login to like and comment on videos
               </p>
               <div className='pr-4'>
-              {/* <GoogleLogin
+              <GoogleLogin
               clientId=""
               render={renderProps => (
                 <button 
@@ -60,7 +60,7 @@ const SideBar = ()=> {
               onSuccess={() => {}}
               onFailure={() => {}}
               cookiePolicy='single_host_origin'
-              /> */}
+              /> 
               </div>
             </div>
           )}
